@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .off-canvas .mfp-content {
+            -ms-scrollbar-base-color: #000;
+            -ms-scrollbar-arrow-color: #000;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+        }
+
+        .mfp-auto-cursor .mfp-content {
+            cursor: auto;
+        }
+
+        .mfp-inline-holder .mfp-content, .mfp-ajax-holder .mfp-content {
+            width: 100%;
+            cursor: auto;
+        }
+
+        .mfp-ready .mfp-content {
+            opacity: 1;
+            -ms-transform: translateY(0);
+            transform: translateY(0);
+        }
+
+        .mfp-content {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            max-width: 100%;
+            margin: 0 auto;
+            text-align: left;
+            z-index: 1045;
+            -ms-transform: translateY(-30px);
+            transform: translateY(-30px);
+            opacity: 0;
+            transition: transform .5s, opacity .3s;
+        }
+
+        *, *:before, *:after {
+            box-sizing: border-box;
+        }
+
+        user agent stylesheet
+        div {
+            display: block;
+        }
+
+        .mfp-container {
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Roboto Condensed", sans-serif;
+        }
+
+        body {
+            font-size: 100%;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        body {
+            color: #777;
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        :root {
+            --primary-color: #f03940;
+        }
+
+        html {
+            font-family: sans-serif;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        *, *:before, *:after {
+            box-sizing: border-box;
+        }
+
+        *, *:before, *:after {
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+<a href="https://shophero.vn/tai-khoan/" class="nav-top-link nav-top-not-logged-in" data-open="#login-form-popup">
+    <span>
+    Đăng nhập      </span>
+
+</a>
+
+<div class="mfp-content">
+    <div id="login-form-popup" class="lightbox-content">
+        <div class="woocommerce-notices-wrapper"></div>
+        <div class="account-container lightbox-inner">
+
+
+            <div class="account-login-inner">
+
+                <h3 class="uppercase">Đăng nhập</h3>
+
+                <form class="woocommerce-form woocommerce-form-login login" method="post">
+
+
+                    <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                        <label for="username">Tên tài khoản hoặc địa chỉ email&nbsp;<span
+                                class="required">*</span></label>
+                        <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username"
+                               id="username" autocomplete="username" value=""></p>
+                    <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                        <label for="password">Mật khẩu&nbsp;<span class="required">*</span></label>
+                        <input class="woocommerce-Input woocommerce-Input--text input-text" type="password"
+                               name="password" id="password" autocomplete="current-password">
+                    </p>
+
+
+                    <p class="form-row">
+                        <label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
+                            <input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme"
+                                   type="checkbox" id="rememberme" value="forever"> <span>Ghi nhớ mật khẩu</span>
+                        </label>
+                        <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce"
+                               value="7dc0bf768c"><input type="hidden" name="_wp_http_referer" value="/">
+                        <button type="submit" class="woocommerce-button button woocommerce-form-login__submit"
+                                name="login" value="Đăng nhập">Đăng nhập
+                        </button>
+                    </p>
+                    <p class="woocommerce-LostPassword lost_password">
+                        <a href="https://shophero.vn/tai-khoan/lost-password/">Quên mật khẩu?</a>
+                    </p>
+                </form>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
