@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b438faa5-77cd-46c2-89ff-811f64107414" name="Changes" comment="" />
+    <list default="true" id="806a307b-9f70-4f0d-942c-79efc64f2e94" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/BE.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FE/legoRolser/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FE/legoRolser/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FE/legoRolser/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../FE/legoRolser/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FE/legoRolser/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../FE/legoRolser/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FE/legoRolser/src/component/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/../FE/legoRolser/src/component/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FE/legoRolser/src/html/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../FE/legoRolser/src/html/Home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FE/legoRolser/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../FE/legoRolser/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FE/legoRolser/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../FE/legoRolser/src/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="2Ub8ImVWEkqisf5zmkq0C4XM2XA" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2Uh1Y1LtjJKm4XvvTCVNoQQM8I2" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -23,14 +39,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b438faa5-77cd-46c2-89ff-811f64107414" name="Changes" comment="" />
-      <created>1693196841823</created>
+      <changelist id="806a307b-9f70-4f0d-942c-79efc64f2e94" name="Changes" comment="" />
+      <created>1693377041512</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1693196841823</updated>
-      <workItem from="1693196842904" duration="158000" />
-      <workItem from="1693197091455" duration="5000" />
-      <workItem from="1693204123657" duration="67000" />
+      <updated>1693377041512</updated>
+      <workItem from="1693377042598" duration="48000" />
+      <workItem from="1693377193420" duration="85000" />
     </task>
     <servers />
   </component>

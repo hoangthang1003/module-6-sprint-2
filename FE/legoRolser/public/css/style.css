@@ -1,0 +1,36 @@
+.aa {
+    font-style: italic;
+    text-transform: capitalize;
+    height: 23px;
+    display: block;
+
+    font: 16px "Roboto Condensed", sans-serif;
+    color: #111111;
+
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.form-login{
+    width: 750px; /* Điều chỉnh độ rộng */
+    height: 40px; /* Điều chỉnh chiều cao */
+    font-size: 16px; /* Điều chỉnh kích thước font chữ */
+}
+.hover-element {
+    color: white;
+    text-align: center;
+    line-height: 80px;
+    transition: background-color 0.3s ease; /* Thuộc tính chuyển đổi và thời gian hiệu ứng */
+}
+
+.hover-element:hover {
+    border-color: #777777;
+    transform: scale(1.1); /* Thay đổi kích thước khi hover */
+}
+#section_1753711110 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(240, 240, 240);
+}
