@@ -11,7 +11,7 @@ import java.util.Date;
 @Component
 public class JwtTokenProvider {
     private static final Logger logger = LoggerFactory.getLogger(JwtTokenProvider.class);
-    private final String jwtSecret = "anhquan1301";
+    private final String jwtSecret = "thang1003";
     private int jwtExpiration = 86400;
 
     public String createToken(Authentication authentication) {

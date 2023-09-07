@@ -65,7 +65,7 @@ export default function Login() {
             <Header/>
             <div className="login-body" style={
                 showFormEmail || showOtpModal || showFormResetPass ?
-                    {opacity: 0.7} : {}
+                    {opacity: 0.5} : {}
             }>
                 <div className="padding-login">
                     <Formik

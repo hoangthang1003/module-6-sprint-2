@@ -32,7 +32,6 @@ public class EmailService implements IEmailService {
     private IUserService iUserService;
     @Autowired
     private IOderProductService iOderProductService;
-
     public void sendResetPasswordEmail(String email, String otp) {
         MimeMessage mimeMessage = javaMailSender.createMimeMessage();
         MimeMessageHelper message = null;
@@ -118,7 +117,7 @@ public class EmailService implements IEmailService {
                         String priceFormatted = String.format("%,.0f", Double.parseDouble(element.getPrice()));
                         String quantity = String.valueOf(element.getQuantity());
                         String subtotalFormatted = String.format("%,.0f", Double.parseDouble(element.getSubtotal()));
-                        return " <tr class=\"text-center click-detail-product\">\n" +
+                        return  " <tr class=\"text-center click-detail-product\">\n" +
                                 " <td scope=\"row\" style=\"height: 100px;\">\n" +
                                 " <img style=\"width: 70px; height: 70px;\" src=\"" + imageSrc + "\"/></td>\n" +
                                 " <td>" + element.getProduct().getCode() + "</td>\n" +
@@ -131,7 +130,7 @@ public class EmailService implements IEmailService {
                     "     </tbody>\n" +
                     " </table>\n" +
                     "<br>\n" +
-                    "<div style=\"font-size: 16px;\">Xin chân thành cảm ơn sự tin tưởng và ủng hộ của bạn.</div>" +
+                    "<div style=\"font-size: 16px;\">Xin chân thành cảm ơn sự tin tưởng và ủng hộ của bạn.</div>"+
                     "<br>\n" +
                     "<div style=\"font-size: 16px;font-weight: bold;\">Trân trọng,</div>\n" +
                     "<div ><img style=\"width: 150px; height: 80px;\" src=\"https://firebasestorage.googleapis.com/v0/b/quannla.appspot.com/o/files%2FThi%E1%BA%BFt%20k%E1%BA%BF%20ch%C6%B0a%20c%C3%B3%20t%C3%AAn%20(1).png?alt=media&token=ce679fe2-2279-44f3-99df-2feb23335027\"/></div>\n" +

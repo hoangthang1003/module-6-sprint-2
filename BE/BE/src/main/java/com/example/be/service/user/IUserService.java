@@ -1,6 +1,7 @@
 package com.example.be.service.user;
 
 import com.example.be.model.User;
+import com.example.be.security.OAuth2.FacebookOAuth2;
 import com.example.be.security.OAuth2.OAuth2UserInfo;
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;
 import org.springframework.security.oauth2.core.user.OAuth2User;
