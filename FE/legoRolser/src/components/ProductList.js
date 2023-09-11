@@ -181,9 +181,7 @@ export default function ProductList() {
     return (
         <>
             <div className="row mx-0" style={{ marginTop: '117px' }}>
-                <div className="px-0 image-container" style={{ height: '400px' }}>
-                    <img src='https://file.hstatic.net/1000295686/collection/5_6ea90b061cc74aa892c058407a0158c3.jpg' width={'100%'} height={'100%'} />
-                </div>
+
             </div>
             <div className="container mb-5" >
                 <div className="row mx-0 px-5 py-3">

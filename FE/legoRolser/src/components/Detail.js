@@ -260,6 +260,7 @@ export default function Detail() {
                                                 </div> :
                                                 <>
                                                     <div className="mt-4">
+                                                        <b>Số lượng:</b>
                                                         <button onClick={quantity > 1 ? () => setQuantity(quantity - 1) : () => { }}
                                                             className={quantity === 1 ? "btn-number text-dieucosmetics" : "btn-quantity text-dieucosmetics"}>-</button>
                                                         <input onChange={handleChangeQuantity} className=" btn-number text-dieucosmetics text-center" value={quantity} />
