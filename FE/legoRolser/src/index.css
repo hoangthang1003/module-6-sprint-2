@@ -22,6 +22,9 @@ code {
     color: rgb(61, 125, 255) !important;
 
 }
+.Slider{
+    transition: all 0.2s ease-in-out;
+}
 
 .text-hover.active {
     color:rgb(61, 125, 255) !important;
@@ -675,12 +678,12 @@ code {
     transition: opacity .6s ease;
 }
 
-.img-producer {
-    opacity: 0.5;
-}
+/*.img-producer {*/
+/*    opacity: 0.6;*/
+/*}*/
 
 .img-producer:hover {
-    opacity: 1;
+    transform: scale(1.5); /* Phóng to ảnh lên 120% khi hover chuột */
 }
 
 .bi-eye {

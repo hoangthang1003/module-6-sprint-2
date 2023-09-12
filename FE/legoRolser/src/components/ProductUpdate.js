@@ -242,7 +242,7 @@ export default function ProductUpdate() {
                   <div className="col-4">
                     <div className="">
                       <div className="form-group">
-                        <label htmlFor="productType">Phân khúc :</label>
+                        <label htmlFor="productType">Bảo hành :</label>
                         <div className="input-field">
                           <Field component='select' type="text" className="input-login" name="productType" id="productType" placeholder="">
                             <option>---Chọn---</option>

@@ -321,36 +321,36 @@ export default function Detail() {
                                         <div className="row d-flex justify-content-center">
                                             <div className="col-lg-2 mx-4 px-0">
                                                 <div className="card-1" >
-                                                    <img src="https://product.hstatic.net/200000259653/product/chong-nang-body-2_9ce4407a74d94687aa1860068fc1a5af_7306aa9c14dd4b499e95a77014fe9ff7_grande.jpg" className="card-img-top" alt="..." />
+                                                    <img src="https://shophero.vn/wp-content/uploads/2023/02/Lego-V%E1%BA%A1n-l%C3%BD-tr%C6%B0%E1%BB%9Dng-th%C3%A0nh-h%C3%B9ng-v%C4%A9-10.jpg" className="card-img-top" alt="..." />
                                                     <div className="card-body">
-                                                        <h6>Serum Trẻ Hoá Da Chống Lão Hóa Image MD...</h6>
+                                                        <h6>Vạn lí trường thành</h6>
                                                         <p className='text-danger'>1.320.000 đ</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className="col-lg-2 mx-4 px-0">
                                                 <div className="card-1" >
-                                                    <img src="https://product.hstatic.net/200000259653/product/kem-duong-mat-chong-lao-hoa-2_f7b95f7999bc4e50abb8650126b12f3f_cee4831ca0c842009188675d9a2b573e_grande.jpg" className="card-img-top" alt="..." />
+                                                    <img src="https://shophero.vn/wp-content/uploads/2023/02/lego-th%E1%BA%BF-gi%E1%BB%9Bi-kh%E1%BB%A7ng-long-8-in-1-21.jpg" className="card-img-top" alt="..." />
                                                     <div className="card-body">
-                                                        <h6>Serum Trẻ Hoá Da Chống Lão Hóa Image MD...</h6>
+                                                        <h6>Khủng long</h6>
                                                         <p className='text-danger'>1.320.000 đ</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className="col-lg-2 mx-4 px-0">
                                                 <div className="card-1" >
-                                                    <img src="https://product.hstatic.net/200000259653/product/kem-duong-da-mat-phuc-hoi-da_a2a09e1e1d3442cd852c80acfe6d7ba3_be734af94af14ebdb3f8cf4b4d4596eb_grande.jpg" className="card-img-top" alt="..." />
+                                                    <img src="https://shophero.vn/wp-content/uploads/2023/02/lego-Robot-Ares-bi%E1%BA%BFn-h%C3%ACnh-m%C3%A1y-bay-chi%E1%BA%BFn-%C4%91%E1%BA%A5u-1-.jpg" className="card-img-top" alt="..." />
                                                     <div className="card-body">
-                                                        <h6>Serum Trẻ Hoá Da Chống Lão Hóa Image MD...</h6>
+                                                        <h6>ROBOT lắp ráp</h6>
                                                         <p className='text-danger'>1.320.000 đ</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className="col-lg-2 mx-4 px-0">
                                                 <div className="card-1" >
-                                                    <img src="https://product.hstatic.net/200000259653/product/kem-duong-body_132c28acd8e3451bb141261fd12808fa_a295287c6f3a47d4bf94f99f4d0b3ea4_grande.jpg" className="card-img-top" alt="..." />
+                                                    <img src="https://shophero.vn/wp-content/uploads/2023/01/M%C3%B4-h%C3%ACnh-l%E1%BA%AFp-r%C3%A1p-g%E1%BA%A5u-d%C3%A2u-12.jpg" className="card-img-top" alt="..." />
                                                     <div className="card-body">
-                                                        <h6>Serum Trẻ Hoá Da Chống Lão Hóa Image MD...</h6>
+                                                        <h6>Gấu dâu</h6>
                                                         <p className='text-danger'>1.320.000 đ</p>
                                                     </div>
                                                 </div>
@@ -361,36 +361,36 @@ export default function Detail() {
                                         <div className="row d-flex justify-content-center">
                                             <div className="col-lg-2 mx-4 px-0">
                                                 <div className="card-1" >
-                                                    <img src="https://product.hstatic.net/200000259653/product/serum-chong-lao-hoa_2c0b7f40c4984738a8946c2a853d32b9_88ec0f99be5044729866eeb294f4f622_large.jpg" className="card-img-top" alt="..." />
+                                                    <img src="https://shophero.vn/wp-content/uploads/2022/12/M%C3%B4-h%C3%ACnh-l%E1%BA%AFp-r%C3%A1p-cung-ho%C3%A0ng-%C4%91%E1%BA%A1o-ph%C3%A1t-s%C3%A1ng-8.jpg" className="card-img-top" alt="..." />
                                                     <div className="card-body">
-                                                        <h6>Serum Trẻ Hoá Da Chống Lão Hóa Image MD...</h6>
+                                                        <h6>Cung trăng</h6>
                                                         <p className='text-danger'>1.320.000 đ</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className="col-lg-2 mx-4 px-0">
                                                 <div className="card-1" >
-                                                    <img src="https://product.hstatic.net/200000259653/product/serum-lam-trang-sang-da-3_f513b111401b4a09b788d0c6ddd9fc19_2d5e307c490f4150bead8f63b213d867_grande.jpg" className="card-img-top" alt="..." />
+                                                    <img src="https://shophero.vn/wp-content/uploads/2023/02/M%C3%B4-h%C3%ACnh-l%E1%BA%AFp-r%C3%A1p-lego-th%E1%BB%8F-t%C3%ADm-33cm-3.jpg" className="card-img-top" alt="..." />
                                                     <div className="card-body">
-                                                        <h6>Serum Trẻ Hoá Da Chống Lão Hóa Image MD...</h6>
+                                                        <h6>Thỏ cà tím</h6>
                                                         <p className='text-danger'>1.320.000 đ</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className="col-lg-2 mx-4 px-0">
                                                 <div className="card-1" >
-                                                    <img src="https://product.hstatic.net/200000259653/product/mat-na-phuc-hoi-da_f65d27202f5e47309d32bbc07f125485_f86d4189753d4911bb8691bed4df6d9b_large.jpg" className="card-img-top" alt="..." />
+                                                    <img src="https://shophero.vn/wp-content/uploads/2023/02/kiotviet_80562fdb03419e4aec47f9e0cc60d7de.jpg" className="card-img-top" alt="..." />
                                                     <div className="card-body">
-                                                        <h6>Serum Trẻ Hoá Da Chống Lão Hóa Image MD...</h6>
+                                                        <h6>Phi hành gia</h6>
                                                         <p className='text-danger'>1.320.000 đ</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className="col-lg-2 mx-4 px-0">
                                                 <div className="card-1" >
-                                                    <img src="https://product.hstatic.net/200000259653/product/serum-ngua-lao-hoa-da-kho_9f86e353465c47e0aa9000a5acc17d4e_4603e1d0bae242cda3576d7c64ce9287_master.jpg" className="card-img-top" alt="..." />
+                                                    <img src="https://shophero.vn/wp-content/uploads/2022/12/M%C3%B4-h%C3%ACnh-l%E1%BA%AFp-r%C3%A1p-phi-h%C3%A0nh-gia-%C4%91i-du-l%E1%BB%8Bch-12.jpg" className="card-img-top" alt="..." />
                                                     <div className="card-body">
-                                                        <h6>Serum Trẻ Hoá Da Chống Lão Hóa Image MD...</h6>
+                                                        <h6>Phi hành gia nhưng xe xịn hơn</h6>
                                                         <p className='text-danger'>1.320.000 đ</p>
                                                     </div>
                                                 </div>

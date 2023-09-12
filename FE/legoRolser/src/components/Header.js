@@ -53,7 +53,12 @@ export default function Header() {
   }
   return (
     <>
+
       <header className=''>
+        <div className="row">
+          <marquee behavior="scroll" direction="right" scrollamount="7" style={{color: "red", marginTop:"0px",fontStyle:"italic" }}> 🛵 Chào mừng bạn đến với trang
+            DANABKIE chuyên bán các loại xe đạp 🏍 Liên hệ hotline 📲 0️⃣8️⃣3️⃣5️⃣4️⃣4️⃣3️⃣4️⃣4️⃣3️⃣ </marquee>
+        </div>
         <nav className="header-fixed border-bottom border-color">
           <div
             style={{ backgroundColor: "#fff" }}

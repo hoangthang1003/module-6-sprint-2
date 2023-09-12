@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import customerService from "../service/login/customer/customerService"
 import cartService from "../service/login/cart/cartService";
 import Swal from "sweetalert2";
@@ -226,31 +226,32 @@ export default function Cart() {
             try {
                 await cartService.payment(valuePayment)
                 setIsSendMail(false)
-                navigate('/paypal-success/' + totalPay + '/' + customerName + '/' + paymentDate + '/' + paymentCode)
+                navigate("/customer/detail")
             } catch (error) {
-                navigate('/paypal-error')
-                localStorage.removeItem('valueCart')
-                if (error.response.data.message) {
-                    Swal.fire({
-                        icon: 'error',
-                        title: error.response.data.message,
-                        showConfirmButton: false,
-                        timer: 1500
-                    })
-                }
+                // navigate('/paypal-error')
+                // localStorage.removeItem('valueCart')
+                // if (error.response.data.message) {
+                //     Swal.fire({
+                //         icon: 'error',
+                //         title: error.response.data.message,
+                //         showConfirmButton: false,
+                //         timer: 1500
+                //     })
+                // }
+                navigate("")
             }
         } catch (error) {
-            setIsSendMail(false)
-            navigate('/paypal-error')
-            localStorage.removeItem('valueCart')
-            if (error.response.data.message) {
-                Swal.fire({
-                    icon: 'error',
-                    title: error.response.data.message,
-                    showConfirmButton: false,
-                    timer: 1500
-                })
-            }
+            // setIsSendMail(false)
+            // navigate('/paypal-error')
+            // localStorage.removeItem('valueCart')
+            // if (error.response.data.message) {
+            //     Swal.fire({
+            //         icon: 'error',
+            //         title: error.response.data.message,
+            //         showConfirmButton: false,
+            //         timer: 1500
+            //     })
+            // }
         }
     }
     const handleVNPaymentMethod = () => {

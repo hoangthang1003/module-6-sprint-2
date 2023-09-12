@@ -172,7 +172,7 @@ export default function PaymentInfo() {
               alt=""
               width={"5%"}
             />
-            <h1 className="text-danger">Thanh toán thất bại</h1>
+            <h1 className="text-danger">Thanh toán thành công</h1>
           </div>
       }
       <div className="d-flex justify-content-center" style={{

@@ -1,14 +1,14 @@
-
-import { useContext, useEffect, useState } from "react"
+import React, {useContext, useEffect, useState} from "react"
 import productService from "../service/login/product/productService"
-import { NavLink, useLocation, useNavigate, useParams } from "react-router-dom"
+import {NavLink, useLocation, useNavigate, useParams} from "react-router-dom"
 import ReactPaginate from "react-paginate"
 import Header from "./Header"
-import { Slider } from "@mui/material"
-import { debounce } from "lodash"; // Import debounce từ thư viện lodash (cần cài đặt lodash trước)
+import {Slider} from "@mui/material"
+import {debounce} from "lodash"; // Import debounce từ thư viện lodash (cần cài đặt lodash trước)
 import cartService from "../service/login/cart/cartService"
 import Swal from "sweetalert2"
-import { QuantityContext } from "./QuantityContext"
+import {QuantityContext} from "./QuantityContext"
+import {Field,Form,Formik} from "formik";
 
 export default function ProductList() {
     const [productList, setProductList] = useState([])
@@ -24,16 +24,16 @@ export default function ProductList() {
         productTypeId: '',
         producerId: '',
         minPrice: 0,
-        maxPrice: 100000000,
-        nameSort:'',
+        maxPrice: 10000000,
+        nameSort: '',
     })
     const sortList = ['Tên: A-Z', 'Tên: Z-A', 'Giá: Giảm dần', 'Giá: Tăng dần']
-    const { iconQuantity, setIconQuantity } = useContext(QuantityContext)
+    const {iconQuantity, setIconQuantity} = useContext(QuantityContext)
     const role = localStorage.getItem('role')
     const navigate = useNavigate()
     const findByName = async () => {
         try {
-            const res = await productService.findByName({ ...valueSearch, name: search })
+            const res = await productService.findByName({...valueSearch, name: search})
             console.log(res.data.content);
             setProductList(res.data.content)
             setCurrentPage(res.data.number)
@@ -102,8 +102,8 @@ export default function ProductList() {
         })
     }, 100);
     const handleSortProduct = async (event) => {
-       setValueSearch({ ...valueSearch, nameSort : event.target.value })
-        const res = await productService.findByName({ ...valueSearch,nameSort : event.target.value }, currentPage)
+        setValueSearch({...valueSearch, nameSort: event.target.value})
+        const res = await productService.findByName({...valueSearch, nameSort: event.target.value}, currentPage)
         setProductList(res.data.content)
     }
     const handleCreateCart = async (price, idCapacityProduct) => {
@@ -145,7 +145,7 @@ export default function ProductList() {
         }
 
     }
-    const handdleDeleteProduct = (id, image) => {
+    const handleDeleteProduct = (id, image) => {
         Swal.fire({
             color: '#d4969a',
             text: 'BẠN CHẮC CHẮN MUỐN XÓA SẢN PHẨM ?',
@@ -180,16 +180,29 @@ export default function ProductList() {
     console.log(productTypeList)
     return (
         <>
-            <div className="row mx-0" style={{ marginTop: '117px' }}>
-
+            <div className="row mx-0" style={{marginTop: '117px'}}>
+                <img src={"https://shophero.vn/wp-content/uploads/2023/09/banner-2048x707.jpg"}/>
             </div>
-            <div className="container mb-5" >
+            {/*<div>*/}
+            {/*    <Formik>*/}
+            {/*        <Form>*/}
+            {/*            <label>Chọn Size</label>*/}
+            {/*            <Field/>*/}
+            {/*            <label>Khoảng giá</label>*/}
+            {/*            <Field/>*/}
+            {/*            <label>Sắp xếp theo</label>*/}
+            {/*            <Field/>*/}
+            {/*            <button className="btn btn-danger">Tìm kiếm</button>*/}
+            {/*        </Form>*/}
+            {/*    </Formik>*/}
+            {/*</div>*/}
+            <div className="container mb-5">
                 <div className="row mx-0 px-5 py-3">
                     <div className="col-3 text-secondary py-5">
                         <div>
                             <h4>Danh mục</h4>
                         </div>
-                        <hr />
+                        <hr/>
 
                         {
                             role == 'ROLE_ADMIN' &&
@@ -206,16 +219,16 @@ export default function ProductList() {
                                     </button>
                                 </div>
                                 <div id="managerProduct"
-                                    className="accordion-collapse collapse show "
-                                    aria-labelledby="headingOne"
-                                    data-bs-parent="#accordionExample">
+                                     className="accordion-collapse collapse show "
+                                     aria-labelledby="headingOne"
+                                     data-bs-parent="#accordionExample">
                                     <div className="nav-item my-2 ms-4">
                                         <NavLink to={'/product/create'} className="nav-link link-dark  text-truncate"
-                                            aria-current="page">Thêm mới sản phẩm</NavLink>
+                                                 aria-current="page">Thêm mới sản phẩm</NavLink>
                                     </div>
                                     <div className="nav-item my-2 ms-4">
                                         <NavLink to={'/product/not-data'} className="nav-link link-dark  text-truncate"
-                                            aria-current="page">Danh sách chưa nhập liệu</NavLink>
+                                                 aria-current="page">Danh sách chưa nhập liệu</NavLink>
                                     </div>
                                 </div>
                             </>
@@ -251,11 +264,12 @@ export default function ProductList() {
                             }
                             <div className="nav-item my-2 ms-4">
                                 <button className="nav-link link-dark text-truncate fw-bold"
-                                    aria-current="page"
-                                    onClick={() => setValueSearch({
-                                        ...valueSearch,
-                                        productTypeId: ''
-                                    })}>Tất cả sản phẩm</button>
+                                        aria-current="page"
+                                        onClick={() => setValueSearch({
+                                            ...valueSearch,
+                                            productTypeId: ''
+                                        })}>Tất cả sản phẩm
+                                </button>
                             </div>
                         </div>
                         <div className="accordion-header mt-2 ms-2" id="headingOne">
@@ -278,9 +292,9 @@ export default function ProductList() {
                                 producerList.map((element, index) => (
                                     <div className="nav-item my-2 ms-4" key={index}>
                                         <input className="form-check-input-1" type="radio"
-                                            checked={selectRadio === element.id}
-                                            onClick={() => handleCancelRadio(element.id)}
-                                            name="radio" id={element.id} />
+                                               checked={selectRadio === element.id}
+                                               onClick={() => handleCancelRadio(element.id)}
+                                               name="radio" id={element.id}/>
                                         <label
                                             className="link-dark form-check-label text-truncate ms-2"
                                             htmlFor={element.id}
@@ -310,6 +324,7 @@ export default function ProductList() {
                             data-bs-parent="#accordionExample">
                             <div className="price-slider-wrapper">
                                 <Slider
+                                    step={10000}
                                     valueLabelDisplay="on"
                                     aria-labelledby="price-slider"
                                     className='bg-white mt-5'
@@ -317,9 +332,9 @@ export default function ProductList() {
                                         style: "currency",
                                         currency: "VND",
                                     })}
-                                    min={0} max={100000000}
+                                    min={0} max={10000000}
                                     value={[valueSearch.minPrice, valueSearch.maxPrice]}
-                                    onChange={handlePriceChange} />
+                                    onChange={handlePriceChange}/>
                             </div>
                         </div>
                     </div>
@@ -332,10 +347,11 @@ export default function ProductList() {
                                 :
                                 <>
                                     <div className="d-flex justify-content-between">
-                                        <h4 >Tất cả sản phẩm</h4>
+                                        <h4>Tất cả sản phẩm</h4>
                                         <div className="float-end ">
                                             <label className="fs-5 text-secondary me-2">Sắp xếp </label>
-                                            <select className="select-dieucosmetics border border-2" onChange={handleSortProduct}>
+                                            <select className="select-dieucosmetics border border-2"
+                                                    onChange={handleSortProduct}>
                                                 <option className="select-sort" value={""}>---Chọn---</option>
                                                 {
                                                     sortList.map((element, index) => (
@@ -353,38 +369,47 @@ export default function ProductList() {
                                             productList.map((element, index) => (
                                                 <div type='button' className="card-list col-4 mt-2" key={index}>
                                                     <div className="cart-icon">
-                                                        <i type="button" onClick={() => { handleCreateCart(element.capacityProductSet[0].priceSale, element.capacityProductSet[0].id) }} className="bi bi-cart-plus" aria-hidden="true"></i>
+                                                        <i type="button" onClick={() => {
+                                                            handleCreateCart(element.capacityProductSet[0].priceSale, element.capacityProductSet[0].id)
+                                                        }} className="bi bi-cart-plus" aria-hidden="true"/>
                                                     </div>
                                                     {
                                                         role === 'ROLE_ADMIN' &&
                                                         <>
                                                             <div className="trash-icon">
-                                                                <i type='button' onClick={() => { handdleDeleteProduct(element.id, element.imageSet[0].name) }} className="bi bi-trash" />
+                                                                <i type='button' onClick={() => {
+                                                                    handleDeleteProduct(element.id, element.imageSet[0].name)
+                                                                }} className="bi bi-trash"/>
                                                             </div>
                                                             <div className="edit-icon">
-                                                                <NavLink to={`/product/update/${element.id}`} type='button' className="bi bi-pencil-square text-decoration-none edit-icon-nav" ></NavLink>
+                                                                <NavLink to={`/product/update/${element.id}`}
+                                                                         type='button'
+                                                                         className="bi bi-pencil-square text-decoration-none edit-icon-nav"/>
                                                             </div>
                                                         </>
                                                     }
-                                                    <NavLink to={`detail/${element.id}`} className={'text-decoration-none text-secondary'}>
+                                                    <NavLink to={`detail/${element.id}`}
+                                                             className={'text-decoration-none text-secondary'}>
                                                         <img src={element.imageSet[0].name}
-                                                            className="card-img-top" alt="..." width={'100%'} />
+                                                             className="card-img-top" alt="..." width={'100%'}/>
                                                         <div className="card-body">
                                                             {
-                                                                element.name.length > 25 ? <h6>{element.name.slice(0, 25)}...</h6> : <h6>{element.name}</h6>
+                                                                element.name.length > 25 ?
+                                                                    <h6>{element.name.slice(0, 25)}...</h6> :
+                                                                    <h6>{element.name}</h6>
                                                             }
                                                             <p>
                                                                 <span className='text-decoration-line-through'>{
                                                                     +element.capacityProductSet[0].price === 0 ? "" :
                                                                         (+element.capacityProductSet[0].price).toLocaleString(
                                                                             "vi-VN",
-                                                                            { style: "currency", currency: "VND" }
+                                                                            {style: "currency", currency: "VND"}
                                                                         )
                                                                 }</span>
                                                                 <span className='text-danger fs-5 float-end fw-bold'>{
                                                                     (+element.capacityProductSet[0].priceSale).toLocaleString(
                                                                         "vi-VN",
-                                                                        { style: "currency", currency: "VND" }
+                                                                        {style: "currency", currency: "VND"}
                                                                     )
                                                                 }</span>
                                                             </p>
@@ -408,7 +433,6 @@ export default function ProductList() {
                                                 pageLinkClassName="page-link"
                                                 activeClassName="active"
                                                 activeLinkClassName="page-link"
-                                                // disabledLinkClassName="d-none"
                                                 forcePage={currentPage}
                                             />
                                         </div>
