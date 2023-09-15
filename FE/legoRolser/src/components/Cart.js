@@ -228,30 +228,29 @@ export default function Cart() {
                 setIsSendMail(false)
                 navigate("/customer/detail")
             } catch (error) {
-                // navigate('/paypal-error')
-                // localStorage.removeItem('valueCart')
-                // if (error.response.data.message) {
-                //     Swal.fire({
-                //         icon: 'error',
-                //         title: error.response.data.message,
-                //         showConfirmButton: false,
-                //         timer: 1500
-                //     })
-                // }
-                navigate("")
+                navigate('/paypal-error')
+                localStorage.removeItem('valueCart')
+                if (error.response.data.message) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: error.response.data.message,
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                }
             }
         } catch (error) {
-            // setIsSendMail(false)
-            // navigate('/paypal-error')
-            // localStorage.removeItem('valueCart')
-            // if (error.response.data.message) {
-            //     Swal.fire({
-            //         icon: 'error',
-            //         title: error.response.data.message,
-            //         showConfirmButton: false,
-            //         timer: 1500
-            //     })
-            // }
+            setIsSendMail(false)
+            navigate('/paypal-error')
+            localStorage.removeItem('valueCart')
+            if (error.response.data.message) {
+                Swal.fire({
+                    icon: 'error',
+                    title: error.response.data.message,
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+            }
         }
     }
     const handleVNPaymentMethod = () => {

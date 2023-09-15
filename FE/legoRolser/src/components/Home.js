@@ -25,7 +25,7 @@ export default function Home() {
     console.log(productSaleList);
     return (
         <>
-            <div style={{ marginTop: 117 }}>
+            <div >
                 {/* Carousel */}
                 <div id="demo" className="carousel slide" data-bs-ride="carousel">
                     {/* Indicators/dots */}
@@ -45,7 +45,7 @@ export default function Home() {
                                 src="https://shophero.vn/wp-content/uploads/2023/08/T%E1%BB%B0U-TR%C6%AF%E1%BB%9CNG-KHUY%E1%BA%BEN-M%E1%BA%A0I-KH%E1%BB%94-NGANG-2048x796.jpg"
                                 alt="New York"
                                 className="d-block"
-                                style={{ width: "100%", height: 600, backgroundSize: 'cover' }}
+                                style={{ width: "100%", height: 600,objectFit: 'cover' }}
                             />
 
 

@@ -8,7 +8,7 @@ import {debounce} from "lodash"; // Import debounce từ thư viện lodash (c�
 import cartService from "../service/login/cart/cartService"
 import Swal from "sweetalert2"
 import {QuantityContext} from "./QuantityContext"
-import {Field,Form,Formik} from "formik";
+import {Field, Form, Formik} from "formik";
 
 export default function ProductList() {
     const [productList, setProductList] = useState([])
@@ -76,9 +76,14 @@ export default function ProductList() {
     }
     const handlePageClick = async (page) => {
         setCurrentPage(page.selected);
-        const res = await productService.findByName(valueSearch, page.selected)
-        setProductList(res.data.content)
+        try {
+            const res = await productService.findByName(valueSearch, page.selected);
+            setProductList(res.data.content);
+        } catch (error) {
+            console.error(error);
+        }
     };
+
     const handleCancelRadio = (id) => {
         setValueSearch({
             ...valueSearch,
@@ -180,7 +185,7 @@ export default function ProductList() {
     console.log(productTypeList)
     return (
         <>
-            <div className="row mx-0" style={{marginTop: '117px'}}>
+            <div className="row mx-0">
                 <img src={"https://shophero.vn/wp-content/uploads/2023/09/banner-2048x707.jpg"}/>
             </div>
             {/*<div>*/}
@@ -367,7 +372,8 @@ export default function ProductList() {
                                     <div className="row">
                                         {
                                             productList.map((element, index) => (
-                                                <div type='button' className="card-list col-4 mt-2" key={index}>
+                                                <div value={index} type='button' className="card-list col-4 mt-2"
+                                                     key={index}>
                                                     <div className="cart-icon">
                                                         <i type="button" onClick={() => {
                                                             handleCreateCart(element.capacityProductSet[0].priceSale, element.capacityProductSet[0].id)

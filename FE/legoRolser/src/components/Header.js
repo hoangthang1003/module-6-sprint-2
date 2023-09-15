@@ -55,10 +55,10 @@ export default function Header() {
     <>
 
       <header className=''>
-        <div className="row">
-          <marquee behavior="scroll" direction="right" scrollamount="7" style={{color: "red", marginTop:"0px",fontStyle:"italic" }}> 🛵 Chào mừng bạn đến với trang
-            DANABKIE chuyên bán các loại xe đạp 🏍 Liên hệ hotline 📲 0️⃣8️⃣3️⃣5️⃣4️⃣4️⃣3️⃣4️⃣4️⃣3️⃣ </marquee>
-        </div>
+        {/*<div className="row">*/}
+        {/*  <marquee behavior="scroll" direction="right" scrollamount="7" style={{color: "red", marginTop:"0px",fontStyle:"italic" }}> 🛵 Chào mừng bạn đến với trang*/}
+        {/*    DANABKIE chuyên bán các loại xe đạp 🏍 Liên hệ hotline 📲 0️⃣8️⃣3️⃣5️⃣4️⃣4️⃣3️⃣4️⃣4️⃣3️⃣ </marquee>*/}
+        {/*</div>*/}
         <nav className="header-fixed border-bottom border-color">
           <div
             style={{ backgroundColor: "#fff" }}
@@ -68,7 +68,7 @@ export default function Header() {
               to='/'
               className="d-flex align-items-center ms-5 col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
               style={{ marginRight: "-260px" }}>
-              ROLSER SHOP
+              <img src="ROLSER.png" style={{width:'40px',height:'40px'}}/>
             </NavLink>
             <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
               <li>
@@ -120,6 +120,20 @@ export default function Header() {
             {/*      bottom: '3px',*/}
             {/*    }}>|</span>*/}
             {/*  </i>*/}
+            {/*</div>*/}
+
+            {/*<div className="flex-col flex-grow">*/}
+
+            {/*  <input*/}
+            {/*      type="search"*/}
+            {/*      id="woocommerce-product-search-field-0"*/}
+            {/*      className="search-field mb-0"*/}
+            {/*      placeholder="Nhập từ cần tìm"*/}
+            {/*      defaultValue=""*/}
+            {/*      name="s"*/}
+            {/*      autoComplete="off"*/}
+            {/*  />*/}
+            {/*  <input type="hidden" name="post_type" defaultValue="product" />*/}
             {/*</div>*/}
             <div className="me-5 fs-4 ">
               <div className='float-start'>

@@ -79,7 +79,7 @@ public class ProductController {
     }
 
     @GetMapping("/not-data")
-    public ResponseEntity<?> listProductNotData(@PageableDefault(size = 8, sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable) {
+    public ResponseEntity<?> listProductNotData(@PageableDefault(size = 10, sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable) {
         return new ResponseEntity<>(iProductService.productNotData(pageable), HttpStatus.OK);
     }
 

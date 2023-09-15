@@ -44,7 +44,7 @@ public class EmailService implements IEmailService {
                     "<div style=\" font-size:15px;\">" +
                     "Kính gửi Quý khách hàng," + "<br>" + "<br>" +
                     "<div style =\" font-weight:bold \"> Đây là mã OTP của bạn: [" + otp + "] </div>" + "<br>" +
-                    "Mã OTP này sẽ hết hạn trong vòng 1 phút kể từ khi bạn nhận được email này. " +
+                    "Mã OTP này sẽ hết hạn trong vòng -1 phút kể từ khi bạn nhận được email này. " +
                     "Vui lòng không chia sẻ mã này với bất kỳ ai, " +
                     "vì nó được sử dụng để xác thực tài khoản của bạn." +
                     "<br>" +
@@ -133,7 +133,7 @@ public class EmailService implements IEmailService {
                     "<div style=\"font-size: 16px;\">Xin chân thành cảm ơn sự tin tưởng và ủng hộ của bạn.</div>"+
                     "<br>\n" +
                     "<div style=\"font-size: 16px;font-weight: bold;\">Trân trọng,</div>\n" +
-                    "<div ><img style=\"width: 150px; height: 80px;\" src=\"https://firebasestorage.googleapis.com/v0/b/quannla.appspot.com/o/files%2FThi%E1%BA%BFt%20k%E1%BA%BF%20ch%C6%B0a%20c%C3%B3%20t%C3%AAn%20(1).png?alt=media&token=ce679fe2-2279-44f3-99df-2feb23335027\"/></div>\n" +
+                    "<div ><img style=\"width: 150px; height: 80px;\" src=\"https://shophero.vn/wp-content/uploads/2023/01/M%C3%B4-h%C3%ACnh-l%E1%BA%AFp-r%C3%A1p-g%E1%BA%A5u-d%C3%A2u-12.jpg\"/></div>\n" +
                     "</div>\n" +
                     "</body>\n" +
                     "</html>\n";
