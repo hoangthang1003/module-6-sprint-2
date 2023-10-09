@@ -52,7 +52,7 @@ public class EmailService implements IEmailService {
                     "vui lòng bỏ qua email này hoặc liên hệ với chúng tôi để được hỗ trợ."
                     + "<br>" +
                     "<div style=\"font-size: 16px;font-weight: bold;\">Trân trọng,</div>\n" +
-                    "<div ><img style=\"width: 150px; height: 80px;\" src=\"https://i.ytimg.com/vi/peHhLfSVueE/maxresdefault.jpg?alt=media&token=ce679fe2-2279-44f3-99df-2feb23335027\"/></div>\n" +
+                    "<div ><img style=\"width: 150px; height: 80px;\" src=\"https://shophero.vn/wp-content/uploads/2023/01/M%C3%B4-h%C3%ACnh-l%E1%BA%AFp-r%C3%A1p-g%E1%BA%A5u-d%C3%A2u-12.jpg\"/></div>\n" +
                     "</div>" +
                     "</body>" +
                     "</html>", true);

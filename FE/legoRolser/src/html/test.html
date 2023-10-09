@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="number" id="so1">
+<input type="number" id="so2">
+<select id="pheptoan">
+    <option value="cong">+</option>
+    <option value="tru">-</option>
+    <option value="nhan">*</option>
+    <option value="chia">/</option>
+</select>
+<button type="submit" onclick="tinhToan()">Submit</button>
+
+<p id="ketqua">Kết quả : </p>
+
+<script>
+    function tinhToan() {
+        // Lấy giá trị từ hộp chọn
+        var pheptoan = document.getElementById("pheptoan").value;
+        // Lấy giá trị từ hai trường nhập liệu
+        var so1 = parseFloat(document.getElementById("so1").value);
+        var so2 = parseFloat(document.getElementById("so2").value);
+
+        // Kiểm tra nếu người dùng không nhập số
+        if (isNaN(so1) || isNaN(so2)) {
+            alert("Vui lòng nhập số hợp lệ.");
+            return;
+        }
+
+        var ketqua;
+
+        // Thực hiện phép toán dựa trên lựa chọn của người dùng
+        switch (pheptoan) {
+            case "cong":
+                ketqua = so1 + so2;
+                break;
+            case "tru":
+                ketqua = so1 - so2;
+                break;
+            case "nhan":
+                ketqua = so1 * so2;
+                break;
+            case "chia":
+                // Kiểm tra nếu người dùng chia cho 0
+                if (so2 === 0) {
+                    alert("Không thể chia cho 0.");
+                    return;
+                }
+                ketqua = so1 / so2;
+                break;
+            default:
+                alert("Phép toán không hợp lệ.");
+                return;
+        }
+
+        // Hiển thị kết quả
+        document.getElementById("ketqua").innerHTML = "Kết quả: " + ketqua;
+    }
+</script>
+</body>
+</html>

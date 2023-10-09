@@ -240,7 +240,7 @@ export default function Detail() {
                                         </div>
                                         <hr />
                                         <div>
-                                            <span className="fw-bold">Dung Tích : </span>
+                                            <span className="fw-bold">Bảo hành : </span>
                                             {
                                                 productDetail?.capacityProductSet.map((set, index) => (
                                                     <a type="button"

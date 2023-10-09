@@ -76,14 +76,9 @@ export default function ProductList() {
     }
     const handlePageClick = async (page) => {
         setCurrentPage(page.selected);
-        try {
-            const res = await productService.findByName(valueSearch, page.selected);
-            setProductList(res.data.content);
-        } catch (error) {
-            console.error(error);
-        }
+        const res = await productService.findByName(valueSearch, page.selected)
+        setProductList(res.data.content)
     };
-
     const handleCancelRadio = (id) => {
         setValueSearch({
             ...valueSearch,
@@ -188,56 +183,58 @@ export default function ProductList() {
             <div className="row mx-0">
                 <img src={"https://shophero.vn/wp-content/uploads/2023/09/banner-2048x707.jpg"}/>
             </div>
-            {/*<div>*/}
+            {/*<div style={{marginTop: "50px", marginLeft: "100px",height: "50%",background:"silver"}}>*/}
             {/*    <Formik>*/}
             {/*        <Form>*/}
-            {/*            <label>Chọn Size</label>*/}
-            {/*            <Field/>*/}
-            {/*            <label>Khoảng giá</label>*/}
-            {/*            <Field/>*/}
-            {/*            <label>Sắp xếp theo</label>*/}
-            {/*            <Field/>*/}
+            {/*            <label>Chọn Size:</label>*/}
+
+            {/*            <Field placeholder="Nhập size"/>*/}
+            {/*            <label>Khoảng giá:</label>*/}
+
+            {/*            <Field placeholder="Nhập giá" />*/}
+            {/*            <label>Sắp xếp theo:</label>*/}
+
+            {/*            <Field placeholder="Giá thấp đến cao"/>*/}
             {/*            <button className="btn btn-danger">Tìm kiếm</button>*/}
             {/*        </Form>*/}
             {/*    </Formik>*/}
             {/*</div>*/}
             <div className="container mb-5">
-                <div className="row mx-0 px-5 py-3">
-                    <div className="col-3 text-secondary py-5">
+                <div className="row mx-0 px-md-5 py-3">
+                    <div className="col-lg-3 col-md-4 col-sm-12 text-secondary py-5">
                         <div>
                             <h4>Danh mục</h4>
                         </div>
                         <hr/>
-
-                        {
-                            role == 'ROLE_ADMIN' &&
-                            <>
-                                <div className="accordion-header mt-2 ms-2" id="headingOne">
-                                    <button
-                                        className="accordion-button fs-6 fw-bold"
-                                        type="button"
-                                        data-bs-toggle="collapse"
-                                        data-bs-target="#managerProduct"
-                                        aria-expanded="true"
-                                        aria-controls="collapseOne">
-                                        Quản lí sản phẩm
-                                    </button>
-                                </div>
-                                <div id="managerProduct"
-                                     className="accordion-collapse collapse show "
-                                     aria-labelledby="headingOne"
-                                     data-bs-parent="#accordionExample">
-                                    <div className="nav-item my-2 ms-4">
-                                        <NavLink to={'/product/create'} className="nav-link link-dark  text-truncate"
-                                                 aria-current="page">Thêm mới sản phẩm</NavLink>
-                                    </div>
-                                    <div className="nav-item my-2 ms-4">
-                                        <NavLink to={'/product/not-data'} className="nav-link link-dark  text-truncate"
-                                                 aria-current="page">Danh sách chưa nhập liệu</NavLink>
-                                    </div>
-                                </div>
-                            </>
-                        }
+                        {/*{*/}
+                        {/*    role == 'ROLE_ADMIN' &&*/}
+                        {/*    <>*/}
+                        {/*        <div className="accordion-header mt-2 ms-2" id="headingOne">*/}
+                        {/*            <button*/}
+                        {/*                className="accordion-button fs-6 fw-bold"*/}
+                        {/*                type="button"*/}
+                        {/*                data-bs-toggle="collapse"*/}
+                        {/*                data-bs-target="#managerProduct"*/}
+                        {/*                aria-expanded="true"*/}
+                        {/*                aria-controls="collapseOne">*/}
+                        {/*                Quản lí sản phẩm*/}
+                        {/*            </button>*/}
+                        {/*        </div>*/}
+                        {/*        <div id="managerProduct"*/}
+                        {/*             className="accordion-collapse collapse show "*/}
+                        {/*             aria-labelledby="headingOne"*/}
+                        {/*             data-bs-parent="#accordionExample">*/}
+                        {/*            <div className="nav-item my-2 ms-4">*/}
+                        {/*                <NavLink to={'/product/create'} className="nav-link link-dark  text-truncate"*/}
+                        {/*                         aria-current="page">Thêm mới sản phẩm</NavLink>*/}
+                        {/*            </div>*/}
+                        {/*            <div className="nav-item my-2 ms-4">*/}
+                        {/*                <NavLink to={'/product/not-data'} className="nav-link link-dark  text-truncate"*/}
+                        {/*                         aria-current="page">Danh sách chưa nhập liệu</NavLink>*/}
+                        {/*            </div>*/}
+                        {/*        </div>*/}
+                        {/*    </>*/}
+                        {/*}*/}
                         <div className="accordion-header mt-2 ms-2" id="headingOne">
                             <button
                                 className="accordion-button fs-6 fw-bold"
@@ -369,10 +366,10 @@ export default function ProductList() {
                                             </select>
                                         </div>
                                     </div>
-                                    <div className="row">
+                                    <div className="row ">
                                         {
                                             productList.map((element, index) => (
-                                                <div value={index} type='button' className="card-list col-4 mt-2"
+                                                <div value={index} type='button' className="card-list col-4 mt-2 col-md-4"
                                                      key={index}>
                                                     <div className="cart-icon">
                                                         <i type="button" onClick={() => {
@@ -382,7 +379,7 @@ export default function ProductList() {
                                                     {
                                                         role === 'ROLE_ADMIN' &&
                                                         <>
-                                                            <div className="trash-icon">
+                                                            <div className="trash-icon ">
                                                                 <i type='button' onClick={() => {
                                                                     handleDeleteProduct(element.id, element.imageSet[0].name)
                                                                 }} className="bi bi-trash"/>
@@ -419,6 +416,32 @@ export default function ProductList() {
                                                                     )
                                                                 }</span>
                                                             </p>
+                                                            <div className="card-body">
+                                                                <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                                                    <li className="pt-2">
+                                                        <span
+                                                            className="product-color-dot color-dot-red float-left rounded-circle ml-1"/>
+                                                                        <span
+                                                                            className="product-color-dot color-dot-blue float-left rounded-circle ml-1"/>
+                                                                        <span
+                                                                            className="product-color-dot color-dot-black float-left rounded-circle ml-1"/>
+                                                                        <span
+                                                                            className="product-color-dot color-dot-light float-left rounded-circle ml-1"/>
+                                                                        <span
+                                                                            className="product-color-dot color-dot-green float-left rounded-circle ml-1"/>
+                                                                    </li>
+                                                                </ul>
+
+                                                                <ul className="list-unstyled d-flex justify-content-center mb-1">
+                                                                    <li>
+                                                                        <i className="text-warning fa fa-star"/>
+                                                                        <i className="text-warning fa fa-star"/>
+                                                                        <i className="text-warning fa fa-star"/>
+                                                                        <i className="text-muted fa fa-star"/>
+                                                                        <i className="text-muted fa fa-star"/>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
                                                     </NavLink>
                                                 </div>

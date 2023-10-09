@@ -226,7 +226,8 @@ export default function Cart() {
             try {
                 await cartService.payment(valuePayment)
                 setIsSendMail(false)
-                navigate("/customer/detail")
+                navigate("/customer/history")
+                setIconQuantity(0)
             } catch (error) {
                 navigate('/paypal-error')
                 localStorage.removeItem('valueCart')
@@ -588,10 +589,10 @@ export default function Cart() {
                                             <>
                                                 <tr>
                                                     <td></td>
-                                                    <td>
-                                                        <img type='button' onClick={() => handlePayMent(+totalPayment ? +totalPayment + 39000 : 0, quantityCheckbox, phoneNumberCustomer !== null ? phoneNumberCustomer : customerDetail?.phoneNumber, customerDetail?.name, addressCustomer !== null ? addressCustomer : customerDetail?.address)}
-                                                            className="border border-1 rounded border-color vnp" width={'100%'} height={'35px'} src="https://3428203472-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-M47Mjlovb1o8n1BkFz7%2F-MN7SxEcvT_Y3xuokNIN%2F-MN7THTOhIcyZG_wpSYr%2FLogo-VNPAYQR-update.png?alt=media&token=388c51ec-cf9a-4e4e-9927-6425d75f09b9" />
-                                                    </td>
+                                                    {/*<td>*/}
+                                                    {/*    <img type='button' onClick={() => handlePayMent(+totalPayment ? +totalPayment + 39000 : 0, quantityCheckbox, phoneNumberCustomer !== null ? phoneNumberCustomer : customerDetail?.phoneNumber, customerDetail?.name, addressCustomer !== null ? addressCustomer : customerDetail?.address)}*/}
+                                                    {/*        className="border border-1 rounded border-color vnp" width={'100%'} height={'35px'} src="https://3428203472-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-M47Mjlovb1o8n1BkFz7%2F-MN7SxEcvT_Y3xuokNIN%2F-MN7THTOhIcyZG_wpSYr%2FLogo-VNPAYQR-update.png?alt=media&token=388c51ec-cf9a-4e4e-9927-6425d75f09b9" />*/}
+                                                    {/*</td>*/}
                                                 </tr>
                                                 <tr>
                                                     <td></td>

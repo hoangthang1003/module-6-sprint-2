@@ -22,6 +22,7 @@ import DataEntry from './components/DataEntry';
 import ProductUpdate from './components/ProductUpdate';
 import DataEntryUpdate from './components/DataEntryUpdate';
 import React from "react";
+import History from "./components/History";
 
 function App() {
     return (
@@ -38,6 +39,7 @@ function App() {
                             <Route path='/cart' element={<Cart />} />
                             <Route path='/product' element={<ProductList />} />
                             <Route path='/customer/detail' element={<CustomerDetail />} />
+                            <Route path='/customer/history' element={<History />} />
                             <Route path='/product/create' element={<ProductCreate />} />
                             <Route path='/product/update/:id' element={<ProductUpdate />} />
                             <Route path='/product/not-data' element={<ListProductNotData />} />

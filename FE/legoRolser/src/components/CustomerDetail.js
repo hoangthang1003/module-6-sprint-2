@@ -206,23 +206,7 @@ export default function CustomerDetail() {
                                                                 <th className="th-dieucosmetics">Số điện thoại :</th>
                                                                 <td>{customerDetail?.phoneNumber ? customerDetail?.phoneNumber.replace(/(\d{4})(\d{3})(\d{3})/, "$1-$2-$3") : "(Chưa cập nhật)"}</td>
                                                             </tr>
-                                                            <tr>
-                                                                <th className="th-dieucosmetics ">
-                                                                    <NavLink to={`update`} type="button" className="text-dieucosmetics text-decoration-none">{'Chỉnh sửa thông tin'}</NavLink>
-                                                                </th>
-                                                                <td></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th className="th-dieucosmetics ">
-                                                                    {
-                                                                        showHistory ?
-                                                                            <span type="button" onClick={() => setShowHistory(!showHistory)} className="text-dieucosmetics text-decoration-none">{'Ẩn lịch sử mua hàng'}</span>
-                                                                            :
-                                                                            <span type="button" onClick={() => setShowHistory(!showHistory)} className="text-dieucosmetics text-decoration-none">{'Lịch sử mua hàng'}</span>
-                                                                    }
-                                                                </th>
-                                                                <td></td>
-                                                            </tr>
+
                                                             <tr>
                                                                 <th className="th-dieucosmetics ">
                                                                     <span type="button" onClick={() => { setShowFormChangePassword(!showFormChangePassword) }} className="text-dieucosmetics">{showFormChangePassword ? 'Ẩn đổi mật khẩu' : 'Đổi mật khẩu'}</span>

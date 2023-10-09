@@ -6,6 +6,7 @@ import com.example.be.model.*;
 import com.example.be.service.product.*;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -31,6 +32,15 @@ public class ProductController {
     @Autowired
     private ICapacityProductService iCapacityProductService;
 
+
+//    @GetMapping("")
+//    public ResponseEntity<Page<Product>> listProduct(@RequestParam(value = "page", defaultValue = "0") int page) {
+//        Pageable pageable = PageRequest.of(page, 6);
+//        Page<Product> listProduct = iProductService.listProduct(pageable);
+//        return new ResponseEntity<>(listProduct, HttpStatus.OK);
+//    }
+
+
     @GetMapping("")
     public ResponseEntity<?> searchProduct(@RequestParam(required = false, defaultValue = "") String name,
                                            @RequestParam(required = false, defaultValue = "") String productTypeId,
@@ -40,7 +50,7 @@ public class ProductController {
                                            @PageableDefault(size = 9) Pageable pageable,
                                            @RequestParam(required = false, defaultValue = "") String sortType
     ) {
-        Sort sort = null;
+        Sort sort ;
         switch (sortType) {
             case "Tên: A-Z":
                 sort = Sort.by("name").ascending();

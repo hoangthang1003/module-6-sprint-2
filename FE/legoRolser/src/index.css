@@ -744,8 +744,7 @@ code {
 }
 
 .card-list {
-    border-radius: 0;
-    border-color: #ffffff
+    border: 1px #ffffff;
 }
 
 .card-list:hover {
@@ -948,9 +947,9 @@ code {
     font-size: 35px;
 }
 
-.header-shadow {
-    box-shadow: 0px 2px 5px 1px rgb(61, 125, 255);
-}
+/*.header-shadow {*/
+/*    box-shadow: 0px 2px 5px 1px rgb(61, 125, 255);*/
+/*}*/
 
 .table {
     --bs-table-color-type: initial;

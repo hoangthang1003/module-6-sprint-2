@@ -111,11 +111,7 @@ export default function Login() {
                     >
                         <Form className="mt-3">
                             <div className="wrapper bg-white mt-0">
-                                <div className="text-center">
-                                    <img
-                                        width='150px'
-                                        src="/logo.png"
-                                        alt=""/></div>
+
                                 <div className="h4 text-secondary text-center pt-2">Đăng Nhập</div>
                                 <div className="form-group py-2">
                                     <label className="text-register">Tài khoản :</label>
@@ -206,7 +202,6 @@ export default function Login() {
                                     <div className="modal-content" style={{marginTop: 270}}>
                                         <div className="modal-header">
                                             <div className="text-center">
-                                                <img src="/dieucosmetics-logo.png" style={{width: 100}} alt="logo"/>
                                             </div>
                                             <button
                                                 type="button"
@@ -300,7 +295,6 @@ export default function Login() {
                                 }}>
                                     <div className="modal-header">
                                         <div className="text-center">
-                                            <img src="/dieucosmetics-logo.png" style={{width: 100}} alt="logo"/>
                                         </div>
                                         <button
                                             type="button"
@@ -422,7 +416,6 @@ export default function Login() {
                                 }}>
                                     <div className="modal-header">
                                         <div className="text-center">
-                                            <img src="/dieucosmetics-logo.png" style={{width: 100}} alt="logo"/>
                                         </div>
                                         <button
                                             type="button"

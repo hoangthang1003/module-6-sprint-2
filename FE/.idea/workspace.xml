@@ -20,12 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6f893a4-33e6-483c-bd86-9506a8cbef4e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../BE/BE/src/main/java/com/example/be/service/mail/impl/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BE/BE/src/main/java/com/example/be/service/mail/impl/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BE/BE/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../BE/BE/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/legoRolser/src/components/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/legoRolser/src/components/Cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BE/BE/src/main/java/com/example/be/controller/product/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BE/BE/src/main/java/com/example/be/controller/product/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BE/BE/src/main/java/com/example/be/repository/product/IProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BE/BE/src/main/java/com/example/be/repository/product/IProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BE/BE/src/main/java/com/example/be/service/product/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BE/BE/src/main/java/com/example/be/service/product/IProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BE/BE/src/main/java/com/example/be/service/product/impl/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BE/BE/src/main/java/com/example/be/service/product/impl/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/legoRolser/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/legoRolser/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/legoRolser/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/legoRolser/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/legoRolser/src/components/CustomerDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/legoRolser/src/components/CustomerDetail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/legoRolser/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/legoRolser/src/components/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/legoRolser/src/components/ProductList.js" beforeDir="false" afterPath="$PROJECT_DIR$/legoRolser/src/components/ProductList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/legoRolser/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/legoRolser/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +79,7 @@
       <workItem from="1694586760167" duration="2607000" />
       <workItem from="1694662511669" duration="2700000" />
       <workItem from="1694674582093" duration="28000" />
+      <workItem from="1695270542944" duration="22000" />
     </task>
     <servers />
   </component>

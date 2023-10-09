@@ -25,9 +25,14 @@ public interface IProductRepository extends JpaRepository<Product, Integer> {
                                 @Param("producerId") String producerId,
                                 @Param("minPrice") Long minPrice,
                                 @Param("maxPrice") Long maxPrice,
-                                Pageable pageable);
+                                    Pageable pageable);
 
     Product findById(int id);
+
+    @Query(value = "SELECT * FROM product ", nativeQuery = true)
+    Page<Product> productList(Pageable pageable);
+
+
 
     @Query(value = "SELECT * FROM product where is_delete = false and is_data_entry = false", nativeQuery = true)
     Page<Product> productNotData(Pageable pageable);

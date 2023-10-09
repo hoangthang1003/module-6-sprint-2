@@ -16,6 +16,11 @@ public class ProductService implements IProductService {
     @Autowired
     private IProductRepository iProductRepository;
 
+//    @Override
+//    public Page<Product> listProduct(Pageable pageable) {
+//        return iProductRepository.productList(pa);
+//    }
+
     @Override
     public Page<Product> searchProduct(String name, String productTypeId, String producerId, long minPrice, long maxPrice, Pageable pageable) {
         return iProductRepository.searchProduct(name, productTypeId, producerId, minPrice, maxPrice, pageable);
